@@ -3,7 +3,6 @@ schema_version: 1
 context:
   name: celery-types
   version: 0.24.0
-  python_min: '3.9'
 
 package:
   name: ${{ name|lower }}
@@ -21,11 +20,11 @@ build:
 requirements:
   build:
     - python ${{ python_min }}.*
-    - poetry-core
+    - uv-build
     - pip
   host:
     - python ${{ python_min }}.*
-    - poetry-core
+    - uv-build
     - pip
   run:
     - python >=${{ python_min }}
