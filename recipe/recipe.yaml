@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: celery-types
-  version: 0.24.0
+  version: "0.25.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: c93fbcd0b04a9e9c2f55d5540aca4aa1ea4cc06a870c0c8dee5062fdd59663fe
+  sha256: 1752dc736e550f0fa6b4f706162c5460314ebf55314f93a476a87b43cd2e30cc
 
 build:
   number: 0
